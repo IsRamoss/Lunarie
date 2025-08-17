@@ -19,6 +19,7 @@ h3,
 h4,
 h5,
 h6 {
+    display: inline-block;
     font-size: 96px;
     color: #B88A2C;
     font-family: 'Playfair Display';
@@ -43,10 +44,9 @@ p {
 }
 
 .hero>header {
-    height: 200px;
+    height: 120px;
     background-color: #0F0B2E;
     display: flex;
-
     .logo {
         display: flex;
         align-items: center;
@@ -81,7 +81,7 @@ p {
 
         p {
             color: #D4AF37;
-            font-size: 48px;
+            font-size: 36px;
             font-family: "Playfair Display", serif;
         }
 
@@ -97,7 +97,7 @@ p {
 
             a i {
                 display: inline-block;
-                font-size: 30px;
+                font-size: 24px;
                 transition: 0.3s;
             }
 
@@ -110,30 +110,29 @@ p {
 /* ============================= */
 main {
     display: flex;
-    padding-right: 15%;
-
     img {
-        width: 40%;
-        height: 100%;
-    }
+        width: 30%;
+        }
 
     >div {
-        width: 60%;
-        padding: 5% 0px;
-
+        display: flex;
+        flex-flow: column;
+        align-content: center;    
+        display: inline-block;
+        /* text-align: center; */
         >p {
-            font-size: 80px;
+            display: inline-block;
+            font-size: 40px;
             font-weight: 400;
-
         }
 
         .botao {
-            margin-top: 10%;
-            margin-left: 10%;
+            display: inline-block;
+
+            margin-top: 5%;
             background-color: #B88A2C;
             border-radius: 100px;
             text-align: center;
-            width: 60%;
             transition: 0.6s;
             padding: 10px;
 
@@ -165,17 +164,16 @@ main {
             align-items: center;
             justify-content: center;
             background-color: #0F0B2E;
-            width: 25%;
+            width: 20%;
             margin: 0 2.5%;
             height: auto;
             aspect-ratio: 1 / 1;
             border-radius: 30px;
             transition: 0.5s;
-
             .Desc {
                 color: #FFFFFF;
                 text-transform: uppercase;
-                font-size: 26px;
+                
                 font-weight: 300px;
             }
 
@@ -186,6 +184,8 @@ main {
             }
 
             p {
+                margin-top: 5%;
+                font-size: 100%;
                 transition: 0.5s;
             }
         }
