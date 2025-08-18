@@ -118,27 +118,43 @@ p {
         .Dropdown{
             position: relative;
             aside{
+            z-index: 4;
+            opacity: 0;
+            transition: 1s;
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
-            top: 100%;
-            background-color: #322B63;
+            top: -200px;
             width: 100%;
             ul{
+            background-color: #0F0B2E;
+            border: solid 2px #0F0B2E;
             display: flex;
             flex-flow: column;
-            padding: 5px 0;
+            padding: 0;
             gap: 0;
             li{
+                transition: 0.6s;
+                background-color: #322B63;
+                border-radius: 10px;
                 padding: 5px 0;
-                border-bottom: 3px solid #1C1645;
+                margin: 1px 0;
+                img{width: 100%;}
             }
-            li:last-child {
-              border-bottom: none;}
+            li:hover{
+                background-color: #100C3B;
+                transform: scale(1.2);
+            }
             a{font-size: 24px;
             color: #D4AF37;
-        font-family: 'Montserrat';}
+            font-family: 'Montserrat';}
             }
+            }
+        }
+        .Dropdown:hover{
+            aside{
+                opacity: 1;
+                top: 100%;
             }
         }
     }
