@@ -740,25 +740,151 @@ p {
                 margin-right: 5%;
             }
         }
-        .Desc{
+
+        .Desc {
             margin: 5% 0;
-            h1{font-size: 48px;}
-            p{font-size: 24px; width: 80%;}
-            .benef{margin: 5% 0;
+
+            h1 {
+                font-size: 48px;
+            }
+
+            p {
+                font-size: 24px;
+                width: 80%;
+            }
+
+            .benef {
+                margin: 5% 0;
                 display: flex;
                 justify-content: space-evenly;
-                .beneficio{display: flex;
-                    align-items: center; gap: 5%;
-                    p{font-size: 24px;}
+
+                .beneficio {
+                    display: flex;
+                    align-items: center;
+                    gap: 5%;
+
+                    p {
+                        font-size: 24px;
+                    }
                 }
             }
         }
-        .gostar{
-            h1{font-size: 48px;}
-            .produtos{
-                display: flex;
-                .produto{display: flex; flex-flow: column; align-items: center; img{width: 50%; aspect-ratio: 1 / 1;margin-bottom: 10px;}p{font-size: 24px;}}
+
+        .gostar {
+            h1 {
+                font-size: 48px;
             }
+
+            .produtos {
+                display: flex;
+
+                .produto {
+                    display: flex;
+                    flex-flow: column;
+                    align-items: center;
+
+                    img {
+                        width: 50%;
+                        aspect-ratio: 1 / 1;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.BodyContact {
+    main {
+        padding: 2.5% 2.5%;
+        background: #100C3B;
+        background: linear-gradient(0deg, rgba(16, 12, 59, 1) 0%, rgba(39, 9, 76, 1) 100%);
+        display: flex;
+        >div {
+            width: 50%;
+        }
+
+        .contact {
+            display: flex;
+            flex-flow: column;
+
+            h1 {
+                font-size: 64px;
+            }
+            p{font-size: 24px;}
+            h2 {
+                font-size: 48px;
+            }
+
+            .lista {
+                display: flex;
+                flex-flow: column;
+                padding: 0;
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    li {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 10px;
+                        user-select: none;
+
+                        a {
+                            font-family: 'Montserrat';
+                            transition: 0.6s;
+                        }
+
+                        i {
+                            color: #D4AF37;
+                            font-size: 30px;
+
+                        }
+
+                        h1 {
+                            font-size: 40px;
+                            color: #D4AF37;
+                        }
+
+                        p,
+                        a {
+                            font-size: 24px;
+                            font-weight: 100;
+                            margin-left: 5px;
+                        }
+                        p{margin-left: 10px;}
+                        a:hover {
+                            color: #B88A2C;
+                        }
+                    }
+
+                    .simbolos {
+                        i:hover {
+                            transform: scale(1.2);
+                        }
+
+                        i {
+                            margin-right: 30px;
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .form {
+            display: flex;
+            flex-flow: column;
+            h1{font-size: 36px;}
+            h2{font-size: 24px; color: #FFFFFF;}
+            input,textarea{width: 100%; font-size: 24px; border: solid 2px #FFFFFF; border-radius: 10px; background-color: transparent; resize: none; color: #ffffff; font-family: 'Montserrat'; font-weight: 100; outline: none;}
+            .topico+.topico+.topico{flex-grow: 1; textarea{height: 80%;}}
+            button{width: 30%; background-color: #B88A2C; border: 0; color: #ffffff; padding: 10px;align-self: flex-end; cursor: pointer;}
+            button:hover{transform: scale(1.2);}
         }
     }
 }
