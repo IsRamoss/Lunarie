@@ -47,8 +47,7 @@ h6 {
     box-shadow: 9px 9px 10px rgba(0, 0, 0, 0.5);
 }
 
-p,
-span {
+p{
     color: #FFFFFF;
     font-family: 'Montserrat';
 }
@@ -255,7 +254,6 @@ span {
             .Desc {
                 color: #FFFFFF;
                 text-transform: uppercase;
-
                 font-weight: 300px;
             }
 
@@ -1153,11 +1151,11 @@ span {
                     grid-template-columns: repeat(10, 1fr);
 
                     span {
+                        font-family: 'Montserrat';
                         grid-column: span 7;
-
                         a {
                             color: #B88A2C;
-                            font: 36px;
+                            font-size: 24px;
                         }
                     }
 
@@ -1220,4 +1218,3 @@ span {
     }
 }
 
-@media (max-width: 550px) {}
